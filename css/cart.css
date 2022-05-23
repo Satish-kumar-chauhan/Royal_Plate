@@ -195,4 +195,7 @@ font-size: 16px;
     display: flex;
     align-items: center;
     }
+    #cartItems .cart-box #cart-container .cart-item{
+    height:auto;
+    }
 }
