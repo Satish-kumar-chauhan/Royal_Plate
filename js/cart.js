@@ -47,18 +47,18 @@ function addToCartItem(itemImage,itemName,itemDesc,Price)
     cartItem.classList.add('cart-item');
     var cartContent = `
                     <div class="row h-100">
-                    <div class="col-sm-2 h-100">
+                    <div class="col-sm-2 col-4 h-100">
                     <img class="cart-item-img h-100 w-100" src="${itemImage}"/>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 col-8">
                     <p class="cart-item-name fs-4">${itemName}</p>
                     <p class="cart-item-desc fs-6">${itemDesc}</p>
                     </div>
-                    <div class="col-sm-2 text-center">
+                    <div class="col-sm-2 col-4 text-center">
                     <p class="cart-item-price">$${Price}</p>
                     <input class="cart-item-qty w-25" value="1" type="number"/>
                     </div>
-                    <div class="col-sm-2 d-flex align-items-center">
+                    <div class="col-sm-2 col-4 d-flex align-items-center">
                     <button class="remove-cart-item btn btn-primary w-100" >Remove</button>
                     </div>
                     </div>
