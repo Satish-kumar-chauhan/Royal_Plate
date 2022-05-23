@@ -70,17 +70,17 @@ function displayCartItems(){
     cartContainerBox.innerHTML = '';
     itemRow.forEach((item)=>{
         cartContainerBox.innerHTML +=`<div class="cart-item row mt-1">
-        <div class="col-sm-1 h-100">
+        <div class="col-sm-1 col-4 h-100">
         <img class="cart-item-img h-100 w-100" src="${item.imgSrc}"/>
         </div>
-        <div class="col-sm-6">
-        <p class="cart-item-name fs-5">${item.name}</p>
+        <div class="col-sm-6 col-8">
+        <p class="cart-item-name ">${item.name}</p>
         <p class="cart-item-desc">${item.description}</p>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 col-4">
         <p class="cart-item-price">$${item.price}</p>
         </div>
-        <div class="col-sm-2 text-center">
+        <div class="col-sm-2 col-4 text-center">
         
         <div class="units col-12 d-flex align-items-center">
             <div class="col-4 btn btn-secondary minus" onclick="changeNumberOfUnits('minus',${item.id})">-</div>
@@ -88,7 +88,7 @@ function displayCartItems(){
             <div class="col-4 btn btn-secondary plus" onclick="changeNumberOfUnits('plus',${item.id})">+</div>
             </div>
         </div>
-        <div class="col-sm-1">
+        <div class="col-sm-1 col-4">
         <button class="remove-cart-item btn btn-secondary w-100" onclick="removeItemFromCart(${item.id})"><i class="fas fa-times"></i></button>
         </div>
         </div>
