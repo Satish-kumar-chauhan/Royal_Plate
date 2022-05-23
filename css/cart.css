@@ -1,0 +1,173 @@
+#cartItems
+{
+    position: fixed;
+    top: 0%;
+    left: 10%;
+    width: 80%;
+    height: 0px;
+    z-index: 9999;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px #000;
+    text-align: center;
+    overflow-y: hidden;
+
+}
+#cartOpen
+{
+    position: fixed;
+    right: 10px;
+    bottom: 70px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fbda9a;
+    font-size: 20px;
+    outline: none;
+    z-index: 1;
+  /* visibility: hidden; */
+  display: none;
+}
+
+#cartOpen.active
+{
+    color: rgb(10, 47, 252);
+    
+    transition: all 0.3s ease-in-out;
+}
+#cartOpen:hover
+{
+    /* background-color: #000; */
+    color: rgb(10, 47, 252);
+}
+#cartItems .cart-box
+{
+    width: 95%;
+    height: 90%;
+    margin: 2% auto;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #eee;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#cartItems .cart-box h3
+{
+    background-color: #3a3e42;
+    height: 50px;
+    color: #fff;
+    margin: 0;
+}
+.cartControl{
+    padding: 5px 0px;
+}
+#cartItems .cart-box table tr{
+    background-color: #3a3e42;
+    color: #fff;
+}
+#cartItems .cart-box table tr th:not(:nth-child(5)){
+    border-right: 1px solid #fff;
+}
+#cartItems .cart-box #cart-container .cart-item{
+    height: 50px;
+    width: 100%;
+}
+#total_cat_amt svg:nth-child(1){
+    color:#dc3545;
+}
+#total_cat_amt svg:nth-child(2){
+    color:#198754;
+}
+#cartItems .cart-box #cart-container .cart-item .cart-item-img{
+    object-fit: contain;
+}
+#cartItems .cart-box #cart-container .cart-item .cart-item-img:hover{
+    transform: scale(2);
+}
+#cartItems .cart-box #cart-container .cart-item .cart-item-name{
+    text-align: left;
+    margin: 0;
+    font-family:'Montserrat', sans-serif;
+}
+#cartItems .cart-box #cart-container .cart-item .cart-item-desc{
+    text-align: left;
+    font-size: 13px;
+    color: rgb(99, 97, 97);
+    font-family:'Montserrat', sans-serif;
+}
+#cartItems .cart-box #cart-container .cart-item .cart-item-price{
+    margin: 0;
+    font-weight: 500;
+}
+#checkout_cart,#empty_cart{
+    visibility: hidden;
+    border-radius: 0;
+}
+#closeCart{
+    border-radius: 0;
+}
+/* #closeCart:hover{
+    background-color: #3a3e42;
+    color: #fff;
+} */
+#checkout_cart svg,#empty_cart svg{
+    color: #fff;
+}
+/* #checkout_cart:hover{
+    background-color:#198754;
+    color: #fff;
+    border-radius: 0;
+}
+#empty_cart:hover{
+    background-color:#dc3545;
+    color: #fff;
+    border-radius: 0;
+} */
+
+
+/* PaymentBox */
+#paymentBox{
+    display: none;
+}
+.paymentBoxInner{
+    width: 98%;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px 10px;
+    font-family:'Montserrat', sans-serif;
+}
+.paymentBoxInner h4{
+    text-align: left;
+}
+.paymentBoxInner label{
+    text-align: left;
+    padding: 5px 0px;
+    display: block;
+}
+.paymentBoxInner input{
+    padding: 7px 8px;
+}
+.paymentBoxInner .sameAddr{
+    display: block;
+    text-align: left;
+}
+.paymentBoxInner svg{
+    font-size: 40px;
+}
+.paymentBoxInner svg:nth-child(1){
+    color: #010080;
+}
+.paymentBoxInner svg:nth-child(2){
+    color:  #fe0000;
+}
+.paymentBoxInner svg:nth-child(3){
+    color: #0100fe;
+}
+.paymentBoxInner svg:nth-child(4){
+    color: #ffc966;
+}
+.paymentBoxInner .checkout svg{
+color: #000;
+font-size: 16px;
+}
