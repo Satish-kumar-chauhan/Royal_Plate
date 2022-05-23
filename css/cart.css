@@ -10,7 +10,6 @@
     box-shadow: 1px 1px 10px #000;
     text-align: center;
     overflow-y: hidden;
-
 }
 #cartOpen
 {
@@ -170,4 +169,30 @@
 .paymentBoxInner .checkout svg{
 color: #000;
 font-size: 16px;
+}
+@media screen and (max-width:768px){
+    #cartItems{
+    width:100%;
+        left:0%;
+    }
+    #cartItems .cart-box{
+        width:100%;
+    }
+}
+@media screen and (max-width:576px){
+    #cartItems{
+    width:100%;
+        left:0%;
+    }
+    #cartItems .cart-box{
+        width:100%;
+    }
+    .cartTotal{
+        display:flex;
+    }
+    .total_cat_amt{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    }
 }
